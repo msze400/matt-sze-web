@@ -3,6 +3,7 @@ import { ButtonAppBar } from './components'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import React from 'react'
 import { Container } from './components'
+import { CustomizedTimeline } from './components'
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
                 <CssBaseline />
                 <ButtonAppBar />
                 <Container />
+                <CustomizedTimeline />
                 <header className="App-header">
                     <p>Hey, I'm Matt.</p>
                     <a

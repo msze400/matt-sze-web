@@ -9,7 +9,7 @@ import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent'
 import TimelineDot from '@material-ui/lab/TimelineDot'
 import SentimentVeryDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissatisfied'
 import LaptopMacIcon from '@material-ui/icons/LaptopMac'
-import HotelIcon from '@material-ui/icons/Hotel'
+import SchoolIcon from '@material-ui/icons/School'
 import RepeatIcon from '@material-ui/icons/Repeat'
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
@@ -43,10 +43,11 @@ export default function CustomizedTimeline() {
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
                         <Typography variant="h6" component="h1">
-                            Receive a 2 out of 5 on the AP Computer Science Exam
+                            Received a 2 out of 5 on the AP Computer Science
+                            Exam
                         </Typography>
                         <Typography>
-                            Vow never to get into Coding Again
+                            Vowed never to get into coding again
                         </Typography>
                     </Paper>
                 </TimelineContent>
@@ -54,7 +55,7 @@ export default function CustomizedTimeline() {
             <TimelineItem>
                 <TimelineOppositeContent>
                     <Typography variant="body2" color="textSecondary">
-                        10:00 am
+                        2014
                     </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
@@ -66,29 +67,64 @@ export default function CustomizedTimeline() {
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
                         <Typography variant="h6" component="h1">
-                            Code
+                            Get an A in a MATLAB Course at Rutgers University
                         </Typography>
-                        <Typography>Because it&apos;s awesome!</Typography>
+                        <Typography>
+                            Enrolled as a Teaching Assistant
+                        </Typography>
                     </Paper>
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
+                <TimelineOppositeContent>
+                    <Typography variant="body2" color="textSecondary">
+                        2018
+                    </Typography>
+                </TimelineOppositeContent>
                 <TimelineSeparator>
                     <TimelineDot color="primary" variant="outlined">
-                        <HotelIcon />
+                        <SchoolIcon />
                     </TimelineDot>
                     <TimelineConnector className={classes.secondaryTail} />
                 </TimelineSeparator>
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
                         <Typography variant="h6" component="h1">
-                            Sleep
+                            Graduated With a B.S. in Chemical Engineering
                         </Typography>
-                        <Typography>Because you need rest</Typography>
+                        <Typography>from Rutgers University</Typography>
                     </Paper>
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
+                <TimelineOppositeContent>
+                    <Typography variant="body2" color="textSecondary">
+                        2018
+                    </Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                    <TimelineDot color="primary" variant="outlined">
+                        <SchoolIcon />
+                    </TimelineDot>
+                    <TimelineConnector className={classes.secondaryTail} />
+                </TimelineSeparator>
+                <TimelineContent>
+                    <Paper elevation={3} className={classes.paper}>
+                        <Typography variant="h6" component="h1">
+                            Joined Lummus Technology
+                        </Typography>
+                        <Typography>
+                            as a Process/App Development Engineer
+                        </Typography>
+                    </Paper>
+                </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+                <TimelineOppositeContent>
+                    <Typography variant="body2" color="textSecondary">
+                        2020
+                    </Typography>
+                </TimelineOppositeContent>
                 <TimelineSeparator>
                     <TimelineDot color="secondary">
                         <RepeatIcon />
@@ -97,11 +133,9 @@ export default function CustomizedTimeline() {
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
                         <Typography variant="h6" component="h1">
-                            Repeat
+                            Enrolled and Graduated from Full Stack Academy's
                         </Typography>
-                        <Typography>
-                            Because this is the life you love!
-                        </Typography>
+                        <Typography>Part-time Flex Program</Typography>
                     </Paper>
                 </TimelineContent>
             </TimelineItem>

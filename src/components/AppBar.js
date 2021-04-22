@@ -34,10 +34,11 @@ export default function ButtonAppBar() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" className={classes.title}>
-                        Matt Sze
-                    </Typography>
-                    <Button color="inherit">Login</Button>
+                    <Typography
+                        variant="h6"
+                        className={classes.title}
+                    ></Typography>
+                    <Button color="inherit">Resume</Button>
                 </Toolbar>
             </AppBar>
         </div>

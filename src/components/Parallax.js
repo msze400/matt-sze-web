@@ -2,7 +2,8 @@ import { Parallax } from 'react-parallax'
 import Card from '@material-ui/core/Card'
 import CardMedia from '@material-ui/core/CardMedia'
 import { makeStyles } from '@material-ui/core/styles'
-import CustomizedTimeline from './Timeline'
+import Grid from '@material-ui/core/Grid'
+import Intro from './Intro'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -35,20 +36,26 @@ export default function Container() {
             bgImageSize="50% auto"
             strength={100}
         >
-            <h1 style={{ color: 'white' }}>Hey, I'm Matt.</h1>
-            <h2 style={{ color: 'white' }}>
-                A classically trained chemical engineer turned software engineer
-            </h2>
-            <Card style={{ width: '25vw', height: '25vh' }}>
-                <CardMedia
-                    className={classes.media}
-                    image="https://drive.google.com/uc?id=17hVFEUOtNRwb86V-djzzcjSK3hc03yFS"
-                    title="Paella dish"
-                />
-            </Card>
-            <CustomizedTimeline />
-
-            <div style={{ height: '100vh', backgroundSize: '20%' }} />
+            <Intro />
+            <Grid
+                container
+                spacing={3}
+                direction="row"
+                justify="center"
+                alignItems="center"
+            >
+                {/* <Paper className={classes.paper}>xs=12</Paper> */}
+                <Grid item xs={6}>
+                    <Card>
+                        <CardMedia
+                            className={classes.media}
+                            image="https://drive.google.com/uc?id=17hVFEUOtNRwb86V-djzzcjSK3hc03yFS"
+                            title="Matt in Machu Picchu!"
+                        />
+                    </Card>
+                </Grid>
+            </Grid>
+            <div style={{ height: '10vh', backgroundSize: '10%' }} />
         </Parallax>
     )
 }
