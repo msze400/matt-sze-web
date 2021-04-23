@@ -11,6 +11,8 @@ import SentimentVeryDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissa
 import LaptopMacIcon from '@material-ui/icons/LaptopMac'
 import SchoolIcon from '@material-ui/icons/School'
 import RepeatIcon from '@material-ui/icons/Repeat'
+import WorkIcon from '@material-ui/icons/Work'
+import CodeIcon from '@material-ui/icons/Code'
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 
@@ -28,6 +30,9 @@ export default function CustomizedTimeline() {
 
     return (
         <Timeline align="alternate">
+            <h4 className="SF-body" style={{ color: 'black' }}>
+                "How did you get here?" you might ask.
+            </h4>
             <TimelineItem>
                 <TimelineOppositeContent>
                     <Typography variant="body2" color="textSecondary">
@@ -67,7 +72,7 @@ export default function CustomizedTimeline() {
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
                         <Typography variant="h6" component="h1">
-                            Get an A in a MATLAB Course at Rutgers University
+                            Earned an A in a MATLAB Course at Rutgers University
                         </Typography>
                         <Typography>
                             Enrolled as a Teaching Assistant
@@ -104,7 +109,7 @@ export default function CustomizedTimeline() {
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                     <TimelineDot color="primary" variant="outlined">
-                        <SchoolIcon />
+                        <WorkIcon />
                     </TimelineDot>
                     <TimelineConnector className={classes.secondaryTail} />
                 </TimelineSeparator>
@@ -122,12 +127,12 @@ export default function CustomizedTimeline() {
             <TimelineItem>
                 <TimelineOppositeContent>
                     <Typography variant="body2" color="textSecondary">
-                        2020
+                        2021
                     </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                     <TimelineDot color="secondary">
-                        <RepeatIcon />
+                        <CodeIcon />
                     </TimelineDot>
                 </TimelineSeparator>
                 <TimelineContent>
@@ -139,6 +144,7 @@ export default function CustomizedTimeline() {
                     </Paper>
                 </TimelineContent>
             </TimelineItem>
+            <div style={{ height: '10vh', backgroundSize: '10%' }} />
         </Timeline>
     )
 }

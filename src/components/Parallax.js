@@ -4,6 +4,7 @@ import CardMedia from '@material-ui/core/CardMedia'
 import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Intro from './Intro'
+import AboutMe from './AboutMe'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -37,25 +38,7 @@ export default function Container() {
             strength={100}
         >
             <Intro />
-            <Grid
-                container
-                spacing={3}
-                direction="row"
-                justify="center"
-                alignItems="center"
-            >
-                {/* <Paper className={classes.paper}>xs=12</Paper> */}
-                <Grid item xs={6}>
-                    <Card>
-                        <CardMedia
-                            className={classes.media}
-                            image="https://drive.google.com/uc?id=17hVFEUOtNRwb86V-djzzcjSK3hc03yFS"
-                            title="Matt in Machu Picchu!"
-                        />
-                    </Card>
-                </Grid>
-            </Grid>
-            <div style={{ height: '10vh', backgroundSize: '10%' }} />
+            <div style={{ height: '65vh' }} />
         </Parallax>
     )
 }

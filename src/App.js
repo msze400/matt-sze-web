@@ -4,6 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import React from 'react'
 import { Container } from './components'
 import { CustomizedTimeline } from './components'
+import { AboutMe } from './components'
 
 function App() {
     return (
@@ -12,6 +13,8 @@ function App() {
                 <CssBaseline />
                 <ButtonAppBar />
                 <Container />
+                <div style={{ height: '10vh', backgroundSize: '10%' }} />
+                <AboutMe />
                 <CustomizedTimeline />
                 <header className="App-header">
                     <p>Hey, I'm Matt.</p>

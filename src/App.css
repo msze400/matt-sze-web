@@ -35,6 +35,15 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.divider::after {
+    display: inline-block;
+    content: '';
+    border-top: 0.1rem solid black;
+    width: 8rem;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+}
+
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
