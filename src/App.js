@@ -5,6 +5,8 @@ import React from 'react'
 import { Container } from './components'
 import { CustomizedTimeline } from './components'
 import { AboutMe } from './components'
+import { Projects } from './components'
+import { TiltThis } from './components'
 
 function App() {
     return (
@@ -16,7 +18,8 @@ function App() {
                 <div style={{ height: '10vh', backgroundSize: '10%' }} />
                 <AboutMe />
                 <CustomizedTimeline />
-                <header className="App-header">
+                <Projects />
+                {/* <header className="App-header">
                     <p>Hey, I'm Matt.</p>
                     <a
                         className="App-link"
@@ -26,7 +29,7 @@ function App() {
                     >
                         Learn React
                     </a>
-                </header>
+                </header> */}
             </React.Fragment>
         </div>
     )

@@ -10,9 +10,12 @@ export default function Intro() {
         <div>
             <Grid
                 container
-                direction="row"
-                justify="center"
+                // direction="row"
+                // justify="center"
                 alignItems="center"
+                align="center"
+                justify="center"
+                direction="column"
             >
                 <Grid item xs={6}>
                     <div style={{ textAlign: 'left' }}>
