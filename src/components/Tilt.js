@@ -23,8 +23,8 @@ export default function TiltThis({ imageURL }) {
             scale={1.01}
             style={{
                 backgroundImage: `url(${imageURL})`,
-                height: '25vh',
-                width: '30vw',
+                height: '35vh',
+                width: '35vw',
                 backgroundSize: '100% 100%',
                 border: '2px black solid',
             }}
