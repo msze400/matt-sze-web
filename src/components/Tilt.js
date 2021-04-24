@@ -10,32 +10,28 @@ import { AutoInit } from 'materialize-css'
 
 const useStyles = makeStyles((theme) => ({}))
 
-export default function TiltThis() {
+export default function TiltThis({ imageURL }) {
     const classes = useStyles()
+    // console.log(learnit)
+    // console.log(imageURL)
     return (
         <Tilt
-            className="parallax-effect-glare-scale learnit"
+            className="parallax-effect-glare-scale"
             perspective={500}
             glareEnable={true}
             glareMaxOpacity={0.45}
             scale={1.01}
             style={{
-                backgroundImage: `url${learnit}) no-repeat`,
+                backgroundImage: `url(${imageURL})`,
                 height: '25vh',
-                // width: 'auto',
                 width: '30vw',
-                // maxHeight: '100%',
-                // maxWidth: '100%',
                 backgroundSize: '100% 100%',
-
                 border: '2px black solid',
             }}
         >
-            <div className="inner-element">
-                <div>React</div>
-                <div>Parallax Tilt</div>
-                <div>👀</div>
-            </div>
+            {/* <div className="inner-element">
+                <div>Learn More</div>
+            </div> */}
         </Tilt>
     )
 }

@@ -13,35 +13,39 @@ export default function Projects() {
     return (
         <Grid
             container
-            spacing={3}
+            // spacing={3}
             direction="column"
             justify="center"
             alignItems="center"
         >
-            <Grid item xs={6}>
-                <h2>Some Things I've Built</h2>
-                <hr />
-                {/* <div> */}
-                <TiltThis />
-                <div>Hello</div>
-            </Grid>
-            <Grid item xs={6}>
-                <img
-                    src={financialIndependence}
-                    style={{
-                        width: '75%',
-                        height: 'auto',
-                    }}
-                />
-            </Grid>
-            <Grid item xs={6}>
-                <img
-                    src={gimmick}
-                    style={{
-                        width: '75%',
-                        height: 'auto',
-                    }}
-                />
+            <Grid
+                className="projects"
+                container
+                item
+                xs={12}
+                // spacing={6}
+                direction="row" //when mobile switch to column
+                justify="center"
+                alignItems="center"
+            >
+                <Grid item xs={5}>
+                    <TiltThis imageURL={learnit} />
+                </Grid>
+                <Grid item xs={5}>
+                    <div>Featured Project</div>
+                </Grid>
+                <Grid item xs={5}>
+                    <div>Hello</div>
+                </Grid>
+                <Grid item xs={5}>
+                    <TiltThis imageURL={financialIndependence} />
+                </Grid>
+                <Grid item xs={5}>
+                    <TiltThis imageURL={gimmick} />
+                </Grid>
+                <Grid item xs={5}>
+                    <div>Hello</div>
+                </Grid>
             </Grid>
         </Grid>
     )
