@@ -31,8 +31,6 @@ export default function Container() {
     return (
         <Parallax
             blur={{ min: -15, max: 15 }}
-            // bgImage="https://drive.google.com/uc?id=17hVFEUOtNRwb86V-djzzcjSK3hc03yFS"
-            // bgImage="https://drive.google.com/uc?id=18x3jU_XOpvP6ZdnL2mFySnSQaasHAeYN"
             bgImage="https://drive.google.com/uc?id=1yZBwny_Y54Vvyxj0qIT9mqYq2YX65VUC"
             bgImageSize="50% auto"
             strength={100}

@@ -7,6 +7,7 @@ import { CustomizedTimeline } from './components'
 import { AboutMe } from './components'
 import { Projects } from './components'
 import { TiltThis } from './components'
+import { Footer } from './components'
 
 function App() {
     return (
@@ -19,17 +20,7 @@ function App() {
                 <AboutMe />
                 <CustomizedTimeline />
                 <Projects />
-                {/* <header className="App-header">
-                    <p>Hey, I'm Matt.</p>
-                    <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn React
-                    </a>
-                </header> */}
+                <Footer />
             </React.Fragment>
         </div>
     )
