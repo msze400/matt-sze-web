@@ -143,6 +143,7 @@ export default function Projects() {
                     </div>
                 </Grid>
             </Grid>
+            <div style={{ height: '10vh' }} />
         </Grid>
     )
 }

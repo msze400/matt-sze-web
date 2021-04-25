@@ -34,10 +34,13 @@ export default function Container() {
             bgImage="https://drive.google.com/uc?id=1yZBwny_Y54Vvyxj0qIT9mqYq2YX65VUC"
             bgImageSize="50% auto"
             strength={100}
-            className="parallax"
+            className="parallax shade-parallax"
+            bgImageStyle={{ opacity: '.5' }}
         >
-            <Intro />
-            {/* <div style={{ height: '65vh' }} /> */}
+            {/* <div style={{ height: '25vh' }} /> */}
+            <div style={{ height: '100vh' }}>
+                <Intro />
+            </div>
         </Parallax>
     )
 }

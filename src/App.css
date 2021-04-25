@@ -44,6 +44,11 @@
     transform: translateY(-0.5rem);
 }
 
+.shade-parallax {
+    background-image: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 2));
+    background-color: rgba(0, 0, 0, 1);
+}
+
 .learnit {
     background-image: url('/src/assets/built-to-learn.png');
     background-size: contain;

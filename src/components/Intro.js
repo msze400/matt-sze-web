@@ -10,8 +10,6 @@ export default function Intro() {
         <div>
             <Grid
                 container
-                // direction="row"
-                // justify="center"
                 alignItems="center"
                 align="center"
                 justify="center"

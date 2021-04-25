@@ -8,6 +8,8 @@ import { AboutMe } from './components'
 import { Projects } from './components'
 import { TiltThis } from './components'
 import { Footer } from './components'
+import { ContactParallax } from './components'
+import { QuoteParallax } from './components'
 
 function App() {
     return (
@@ -19,7 +21,9 @@ function App() {
                 <div style={{ height: '10vh', backgroundSize: '10%' }} />
                 <AboutMe />
                 <CustomizedTimeline />
+                <QuoteParallax />
                 <Projects />
+                <ContactParallax />
                 <Footer />
             </React.Fragment>
         </div>
