@@ -29,9 +29,7 @@ export default function TiltThis({ imageURL }) {
                 border: '2px black solid',
             }}
         >
-            <div className="inner-element">
-                <div>Learn More</div>
-            </div>
+            <div className="inner-element">{/* <div>Learn More</div> */}</div>
         </Tilt>
     )
 }

@@ -7,9 +7,9 @@ export default function Footer() {
     return (
         <AppBar position="static" color="primary">
             <Container maxWidth="md">
-                <Toolbar>
+                <Toolbar style={{ justifyContent: 'center' }}>
                     <Typography variant="body1" color="inherit">
-                        © 2019 Gistia
+                        Designed & Built by Matt Sze
                     </Typography>
                 </Toolbar>
             </Container>
