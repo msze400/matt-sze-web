@@ -90,7 +90,10 @@ export default function Projects() {
                     <hr />
                 </Grid>
                 <Grid item xs={5} className={classes.projectImg}>
-                    <TiltThis imageURL={learnit} />
+                    <TiltThis
+                        imageURL={learnit}
+                        liveLink="https://built-to-learn.herokuapp.com/"
+                    />
                 </Grid>
                 <Grid item xs={5}>
                     <div>
@@ -116,7 +119,10 @@ export default function Projects() {
                     </div>
                 </Grid>
                 <Grid item xs={5} className={classes.projectImg}>
-                    <TiltThis imageURL={financialIndependence} />
+                    <TiltThis
+                        imageURL={financialIndependence}
+                        liveLink="https://finfreedom-dashboard.herokuapp.com"
+                    />
                 </Grid>
                 <Grid item xs={5}>
                     <div>
@@ -141,7 +147,10 @@ export default function Projects() {
                     </div>
                 </Grid>
                 <Grid item xs={5} className={classes.projectImg}>
-                    <TiltThis imageURL={gimmick} />
+                    <TiltThis
+                        imageURL={gimmick}
+                        liveLink="https://grace-shopper-gimmicks.herokuapp.com/home"
+                    />
                 </Grid>
                 <Grid item xs={5}>
                     <div>
@@ -163,8 +172,8 @@ export default function Projects() {
                             UI
                         </p>
                         <LinkRow
-                            githubLink="https://grace-shopper-gimmicks.herokuapp.com/home"
-                            liveLink="https://github.com/Graceshopper-Gimmick/Grace-Shopper-Gimmick/tree/main/fs-app-template"
+                            githubLink="https://github.com/Graceshopper-Gimmick/Grace-Shopper-Gimmick/tree/main/fs-app-template"
+                            liveLink="https://grace-shopper-gimmicks.herokuapp.com/home"
                         />
                     </div>
                 </Grid>

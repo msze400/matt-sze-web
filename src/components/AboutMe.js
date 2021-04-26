@@ -27,6 +27,7 @@ export default function AboutMe() {
             justify="center"
             alignItems="center"
             className="primary-background"
+            style={{ paddingTop: '2rem' }}
         >
             {/* <Paper className={classes.paper}>xs=12</Paper> */}
             <Grid item xs={3}>
