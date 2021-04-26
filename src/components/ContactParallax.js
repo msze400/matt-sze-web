@@ -76,6 +76,7 @@ export default function ContactParallax() {
                                     minWidth: '180px',
                                     minHeight: '40px',
                                 }}
+                                href="mailto:msze400@gmail.com"
                             >
                                 Say Hello
                             </ColorButton>

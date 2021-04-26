@@ -85,6 +85,7 @@ export default function Intro() {
                                 minWidth: '180px',
                                 minHeight: '40px',
                             }}
+                            href="mailto:msze400@gmail.com"
                         >
                             Get In Touch
                         </ColorButton>
