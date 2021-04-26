@@ -5,15 +5,19 @@ import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
 
 const useStyles = makeStyles((theme) => ({
-    contact: {
-        display: 'inline-flex',
-        flexDirection: 'column',
-        color: 'white',
-    },
-
     contactButton: {
         width: '50px',
         // display: 'inline-fle
+    },
+
+    contactContents: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignContent: 'center',
+        flexDirection: 'column',
+        '& h3, h1': {
+            color: 'white',
+        },
     },
 }))
 
@@ -36,7 +40,10 @@ export default function ContactParallax() {
             >
                 <Grid item xs={5}>
                     {/* <div style={{ height: '15vh' }}> */}
-                    <div style={{ height: '50vh' }} className={classes.contact}>
+                    <div
+                        style={{ height: '50vh' }}
+                        className={classes.contactContents}
+                    >
                         <h1>Get In Touch</h1>
                         <h3>
                             I'm currently open to new opportunities, and my

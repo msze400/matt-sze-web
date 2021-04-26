@@ -19,9 +19,14 @@ import Typography from '@material-ui/core/Typography'
 const useStyles = makeStyles((theme) => ({
     paper: {
         padding: '6px 16px',
+        backgroundColor: 'rgb(35, 53, 84)',
     },
     secondaryTail: {
         backgroundColor: theme.palette.secondary.main,
+    },
+
+    year: {
+        color: '#ccd6f6',
     },
 }))
 
@@ -29,13 +34,15 @@ export default function CustomizedTimeline() {
     const classes = useStyles()
 
     return (
-        <Timeline align="alternate">
-            <h4 className="SF-body" style={{ color: 'black' }}>
-                "How did you get here?" you might ask.
-            </h4>
+        <Timeline
+            align="alternate"
+            className="primary-background"
+            style={{ margin: 0 }}
+        >
+            <h4 className="SF-body">"How did you get here?" you might ask.</h4>
             <TimelineItem>
                 <TimelineOppositeContent>
-                    <Typography variant="body2" color="textSecondary">
+                    <Typography variant="body2" className={classes.year}>
                         2013
                     </Typography>
                 </TimelineOppositeContent>
@@ -59,7 +66,7 @@ export default function CustomizedTimeline() {
             </TimelineItem>
             <TimelineItem>
                 <TimelineOppositeContent>
-                    <Typography variant="body2" color="textSecondary">
+                    <Typography variant="body2" className={classes.year}>
                         2014
                     </Typography>
                 </TimelineOppositeContent>
@@ -82,12 +89,12 @@ export default function CustomizedTimeline() {
             </TimelineItem>
             <TimelineItem>
                 <TimelineOppositeContent>
-                    <Typography variant="body2" color="textSecondary">
+                    <Typography variant="body2" className={classes.year}>
                         2018
                     </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
-                    <TimelineDot color="primary" variant="outlined">
+                    <TimelineDot color="primary">
                         <SchoolIcon />
                     </TimelineDot>
                     <TimelineConnector className={classes.secondaryTail} />
@@ -103,12 +110,12 @@ export default function CustomizedTimeline() {
             </TimelineItem>
             <TimelineItem>
                 <TimelineOppositeContent>
-                    <Typography variant="body2" color="textSecondary">
+                    <Typography variant="body2" className={classes.year}>
                         2018
                     </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
-                    <TimelineDot color="primary" variant="outlined">
+                    <TimelineDot color="primary">
                         <WorkIcon />
                     </TimelineDot>
                     <TimelineConnector className={classes.secondaryTail} />
@@ -126,7 +133,7 @@ export default function CustomizedTimeline() {
             </TimelineItem>
             <TimelineItem>
                 <TimelineOppositeContent>
-                    <Typography variant="body2" color="textSecondary">
+                    <Typography variant="body2" className={classes.year}>
                         2021
                     </Typography>
                 </TimelineOppositeContent>

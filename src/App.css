@@ -54,6 +54,20 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+.primary-background {
+    background-color: #0a192f;
+}
+
+p,
+h2,
+h1,
+h3,
+h4 {
+    color: #ccd6f6;
+}
+body {
+    overscroll-behavior-y: none;
+}
 
 @keyframes App-logo-spin {
     from {

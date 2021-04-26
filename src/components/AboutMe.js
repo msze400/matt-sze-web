@@ -22,10 +22,11 @@ export default function AboutMe() {
         // <div style={{ height: '50vh', backgroundColor: 'blue' }}>
         <Grid
             container
-            spacing={3}
+            // spacing={3}
             direction="row"
             justify="center"
             alignItems="center"
+            className="primary-background"
         >
             {/* <Paper className={classes.paper}>xs=12</Paper> */}
             <Grid item xs={3}>

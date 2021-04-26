@@ -18,7 +18,6 @@ function App() {
                 <CssBaseline />
                 <ButtonAppBar />
                 <Container />
-                <div style={{ height: '10vh', backgroundSize: '10%' }} />
                 <AboutMe />
                 <CustomizedTimeline />
                 <QuoteParallax />

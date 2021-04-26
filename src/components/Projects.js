@@ -19,6 +19,15 @@ const useStyles = makeStyles((theme) => ({
     rightSide: {
         textAlign: 'right',
     },
+
+    projectDesc: {
+        backgroundColor: 'rgb(35, 53, 84)',
+    },
+
+    featuredProject: {
+        color: '#64ffda',
+        textAlign: 'right',
+    },
 }))
 
 export default function Projects() {
@@ -54,6 +63,7 @@ export default function Projects() {
             direction="column"
             justify="center"
             alignItems="center"
+            className="primary-background"
         >
             <Grid
                 className="projects"
@@ -74,9 +84,11 @@ export default function Projects() {
                 </Grid>
                 <Grid item xs={5}>
                     <div>
-                        <h3 className={classes.rightSide}>Featured Project</h3>
+                        <h3 className={classes.featuredProject}>
+                            Featured Project
+                        </h3>
                         <h2 className={classes.rightSide}>Learn It</h2>
-                        <Paper>
+                        <Paper className={classes.projectDesc}>
                             Learn It is a live stream teaching platform that
                             brings the best teachers on the web to anyone with a
                             computer. Learn It was created with the intention
@@ -98,11 +110,13 @@ export default function Projects() {
                 </Grid>
                 <Grid item xs={5}>
                     <div>
-                        <h3 className={classes.rightSide}>Featured Project</h3>
+                        <h3 className={classes.featuredProject}>
+                            Featured Project
+                        </h3>
                         <h2 className={classes.rightSide}>
                             Financial Freedom Dashboard
                         </h2>
-                        <Paper>
+                        <Paper className={classes.projectDesc}>
                             The financial freedom dashboard calculates how much
                             money is required to invest on a monthly basis in
                             order to become financially independent.
@@ -121,11 +135,13 @@ export default function Projects() {
                 </Grid>
                 <Grid item xs={5}>
                     <div>
-                        <h3 className={classes.rightSide}>Featured Project</h3>
+                        <h3 className={classes.featuredProject}>
+                            Featured Project
+                        </h3>
                         <h2 className={classes.rightSide}>
                             Gimme Yo Money Gimmicks
                         </h2>
-                        <Paper>
+                        <Paper className={classes.projectDesc}>
                             Learn It is a live stream teaching platform that
                             brings the best teachers on the web to anyone with a
                             computer. Learn It was created with the intention

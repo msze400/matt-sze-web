@@ -38,9 +38,7 @@ export default function Container() {
             bgImageStyle={{ opacity: '.5' }}
         >
             {/* <div style={{ height: '25vh' }} /> */}
-            <div style={{ height: '100vh' }}>
-                <Intro />
-            </div>
+            <Intro />
         </Parallax>
     )
 }

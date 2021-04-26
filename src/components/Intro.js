@@ -2,10 +2,17 @@ import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 
-const useStyles = makeStyles((theme) => ({}))
+const useStyles = makeStyles((theme) => ({
+    introContents: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignContent: 'center',
+        flexDirection: 'column',
+    },
+}))
 
 export default function Intro() {
-    // const classes = useStyles()
+    const classes = useStyles()
     return (
         <div>
             <Grid
@@ -16,7 +23,10 @@ export default function Intro() {
                 direction="column"
             >
                 <Grid item xs={6}>
-                    <div style={{ textAlign: 'left' }}>
+                    <div
+                        style={{ textAlign: 'left', height: '94vh' }}
+                        className={classes.introContents}
+                    >
                         <h4 className="SF-body" style={{ color: 'white' }}>
                             Hey my name is,
                         </h4>
@@ -48,12 +58,12 @@ export default function Intro() {
                             I'm working on the App Development Team at Lummus
                             Technology.
                         </h3>
+                        <Button variant="outlined" size="large" color="black">
+                            Get In Touch
+                        </Button>
                     </div>
                 </Grid>
             </Grid>
-            <Button variant="outlined" size="large" color="black">
-                Get In Touch
-            </Button>
         </div>
     )
 }
