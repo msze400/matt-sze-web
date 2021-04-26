@@ -1,5 +1,5 @@
 import { Parallax } from 'react-parallax'
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles, withStyles } from '@material-ui/core/styles'
 import iceland3 from '../assets/Iceland-3.JPG'
 import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
@@ -20,6 +20,16 @@ const useStyles = makeStyles((theme) => ({
         },
     },
 }))
+
+const ColorButton = withStyles((theme) => ({
+    root: {
+        color: 'white',
+        backgroundColor: '#0a192f',
+        '&:hover': {
+            backgroundColor: '#233554',
+        },
+    },
+}))(Button)
 
 export default function ContactParallax() {
     const classes = useStyles()
@@ -51,14 +61,25 @@ export default function ContactParallax() {
                             wanted to get in contact with me, I'll do my best to
                             get back to you.
                         </h3>
-                        <Button
-                            className="contactButton"
-                            variant="outlined"
-                            size="medium"
-                            color="black"
+                        <div
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                            }}
                         >
-                            Say Hello
-                        </Button>
+                            <ColorButton
+                                variant="contained"
+                                className={classes.margin}
+                                style={{
+                                    maxWidth: '200px',
+                                    maxHeight: '40px',
+                                    minWidth: '180px',
+                                    minHeight: '40px',
+                                }}
+                            >
+                                Say Hello
+                            </ColorButton>
+                        </div>
                     </div>
                 </Grid>
             </Grid>

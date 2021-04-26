@@ -39,7 +39,9 @@ export default function CustomizedTimeline() {
             className="primary-background"
             style={{ margin: 0 }}
         >
-            <h4 className="SF-body">"How did you get here?" you might ask.</h4>
+            <h4 className="SF-body" style={{ color: '#64ffda' }}>
+                "How did you get here?" you might ask.
+            </h4>
             <TimelineItem>
                 <TimelineOppositeContent>
                     <Typography variant="body2" className={classes.year}>

@@ -1,4 +1,4 @@
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles, withStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 
@@ -11,6 +11,16 @@ const useStyles = makeStyles((theme) => ({
     },
 }))
 
+const ColorButton = withStyles((theme) => ({
+    root: {
+        color: 'white',
+        backgroundColor: '#0a192f',
+        '&:hover': {
+            backgroundColor: '#233554',
+        },
+    },
+}))(Button)
+
 export default function Intro() {
     const classes = useStyles()
     return (
@@ -22,7 +32,7 @@ export default function Intro() {
                 justify="center"
                 direction="column"
             >
-                <Grid item xs={6}>
+                <Grid item xs={5}>
                     <div
                         style={{ textAlign: 'left', height: '94vh' }}
                         className={classes.introContents}
@@ -36,6 +46,7 @@ export default function Intro() {
                                 fontSize: '4rem',
                                 marginTop: '1rem',
                                 marginBottom: '1rem',
+                                color: 'white',
                             }}
                         >
                             Matt Sze.
@@ -46,11 +57,17 @@ export default function Intro() {
                                 fontSize: '3rem',
                                 marginTop: '1rem',
                                 marginBottom: '1rem',
+                                color: 'white',
                             }}
                         >
                             I enjoy solving problems.
                         </h1>
-                        <h3 className="SF-header" style={{ color: 'white' }}>
+                        <h3
+                            className="SF-header"
+                            style={{
+                                color: 'white',
+                            }}
+                        >
                             I'm a New Jersey-based software engineer who
                             specializes in full-stack development. I am
                             classically trained as a chemical engineer, but have
@@ -58,9 +75,19 @@ export default function Intro() {
                             I'm working on the App Development Team at Lummus
                             Technology.
                         </h3>
-                        <Button variant="outlined" size="large" color="black">
+
+                        <ColorButton
+                            variant="contained"
+                            className={classes.margin}
+                            style={{
+                                maxWidth: '200px',
+                                maxHeight: '40px',
+                                minWidth: '180px',
+                                minHeight: '40px',
+                            }}
+                        >
                             Get In Touch
-                        </Button>
+                        </ColorButton>
                     </div>
                 </Grid>
             </Grid>

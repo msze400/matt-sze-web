@@ -22,11 +22,19 @@ const useStyles = makeStyles((theme) => ({
 
     projectDesc: {
         backgroundColor: 'rgb(35, 53, 84)',
+        color: '#ccd6f6',
+        textAlign: 'left',
+        padding: '1rem',
+    },
+
+    icon: {
+        color: '#ccd6f6',
     },
 
     featuredProject: {
         color: '#64ffda',
         textAlign: 'right',
+        fontFamily: 'Space Mono',
     },
 }))
 
@@ -43,6 +51,7 @@ export default function Projects() {
                             onClick={(event) =>
                                 (window.location.href = githubLink)
                             }
+                            className={classes.icon}
                         />
                     </IconButton>
                     <IconButton>
@@ -50,6 +59,7 @@ export default function Projects() {
                             onClick={(event) =>
                                 (window.location.href = liveLink)
                             }
+                            className={classes.icon}
                         />
                     </IconButton>
                 </div>
@@ -76,7 +86,7 @@ export default function Projects() {
                 alignItems="center"
             >
                 <Grid item xs={8}>
-                    <h1>Some Things I've Built</h1>
+                    <h1>Things I've Built</h1>
                     <hr />
                 </Grid>
                 <Grid item xs={5} className={classes.projectImg}>

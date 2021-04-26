@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Intro from './Intro'
 import AboutMe from './AboutMe'
+import iceland7 from '../assets/Iceland-7.JPG'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -31,11 +32,11 @@ export default function Container() {
     return (
         <Parallax
             blur={{ min: -15, max: 15 }}
-            bgImage="https://drive.google.com/uc?id=1yZBwny_Y54Vvyxj0qIT9mqYq2YX65VUC"
+            bgImage={iceland7}
             bgImageSize="50% auto"
             strength={100}
             className="parallax shade-parallax"
-            bgImageStyle={{ opacity: '.5' }}
+            bgImageStyle={{ opacity: '.3' }}
         >
             {/* <div style={{ height: '25vh' }} /> */}
             <Intro />
