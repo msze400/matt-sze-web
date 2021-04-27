@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 
     timelineDot: {
         backgroundColor: 'rgb(35, 53, 84)',
-        color: '#64ffda',
+        color: '#ccd6f6',
     },
 }))
 
