@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
+import resume from '../assets/Sze_Resume.pdf'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -42,7 +43,14 @@ export default function ButtonAppBar() {
                         variant="h6"
                         className={classes.title}
                     ></Typography>
-                    <Button color="inherit">Resume</Button>
+                    <Button
+                        color="inherit"
+                        href={resume}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Resume
+                    </Button>
                 </Toolbar>
             </AppBar>
         </div>

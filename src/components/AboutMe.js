@@ -1,25 +1,8 @@
-import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import iceland from '../assets/Iceland-1.JPG'
 
-const useStyles = makeStyles((theme) => ({
-    // media: {
-    //     height: 50,
-    //     paddingTop: '56.25%', // 16:9
-    // },
-    // Card: {
-    //     width: '10vw',
-    //     margin: 'auto',
-    // },
-    // Media: {
-    //     height: 550,
-    // },
-}))
-
 export default function AboutMe() {
-    const classes = useStyles()
     return (
-        // <div style={{ height: '50vh', backgroundColor: 'blue' }}>
         <Grid
             container
             // spacing={3}
@@ -29,7 +12,6 @@ export default function AboutMe() {
             className="primary-background"
             style={{ paddingTop: '2rem' }}
         >
-            {/* <Paper className={classes.paper}>xs=12</Paper> */}
             <Grid item xs={3}>
                 <h2>About Me</h2>
                 <hr />
@@ -60,8 +42,8 @@ export default function AboutMe() {
             </Grid>
             <Grid item xs={6}>
                 <img
+                    alt="matt on a rock"
                     src={iceland}
-                    // style={{ height: 'auto' }}
                     style={{
                         width: '75%',
                         height: 'auto',
@@ -69,6 +51,5 @@ export default function AboutMe() {
                 />
             </Grid>
         </Grid>
-        // </div>
     )
 }

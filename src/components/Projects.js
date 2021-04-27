@@ -46,21 +46,15 @@ export default function Projects() {
         return (
             <React.Fragment>
                 <div className={classes.rightSide}>
-                    <IconButton>
-                        <GitHubIcon
-                            onClick={(event) =>
-                                (window.location.href = githubLink)
-                            }
-                            className={classes.icon}
-                        />
+                    <IconButton
+                        onClick={(event) => (window.location.href = githubLink)}
+                    >
+                        <GitHubIcon className={classes.icon} />
                     </IconButton>
-                    <IconButton>
-                        <ExitToAppIcon
-                            onClick={(event) =>
-                                (window.location.href = liveLink)
-                            }
-                            className={classes.icon}
-                        />
+                    <IconButton
+                        onClick={(event) => (window.location.href = liveLink)}
+                    >
+                        <ExitToAppIcon className={classes.icon} />
                     </IconButton>
                 </div>
             </React.Fragment>
@@ -161,11 +155,8 @@ export default function Projects() {
                             Gimme Yo Money Gimmicks
                         </h2>
                         <Paper className={classes.projectDesc}>
-                            Learn It is a live stream teaching platform that
-                            brings the best teachers on the web to anyone with a
-                            computer. Learn It was created with the intention
-                            that rock star teachers should be paid like super
-                            stars.
+                            Gimme Yo Money Gimmicks is an e-commerce store that
+                            allows users to buy gag gifts for their loved ones.
                         </Paper>
                         <p className={classes.rightSide}>
                             PostgresSQL | Express | React | Node.js | Material

@@ -1,14 +1,6 @@
 import { Parallax } from 'react-parallax'
-import Card from '@material-ui/core/Card'
-import CardMedia from '@material-ui/core/CardMedia'
-import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
-import Intro from './Intro'
-import AboutMe from './AboutMe'
 import iceland5 from '../assets/Iceland-5.JPG'
-import Typography from '@material-ui/core/Typography'
-
-const useStyles = makeStyles((theme) => ({}))
 
 export default function QuoteParallax() {
     // const classes = useStyles()

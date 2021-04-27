@@ -1,21 +1,8 @@
-import { makeStyles } from '@material-ui/core/styles'
-import Grid from '@material-ui/core/Grid'
-import Card from '@material-ui/core/Card'
-import CardMedia from '@material-ui/core/CardMedia'
-import Paper from '@material-ui/core/Paper'
-import matt from '../assets/matt-background.png'
 import Tilt from 'react-parallax-tilt'
-import learnit from '../assets/built-to-learn.png'
-import { AutoInit } from 'materialize-css'
-
-const useStyles = makeStyles((theme) => ({}))
 
 export default function TiltThis({ imageURL, liveLink }) {
-    const classes = useStyles()
-    // console.log(learnit)
-    // console.log(imageURL)
     return (
-        <a href={liveLink} target="_blank">
+        <a href={liveLink} target="_blank" rel="noreferrer">
             <Tilt
                 className="parallax-effect-glare-scale"
                 perspective={500}

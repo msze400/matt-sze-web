@@ -10,7 +10,6 @@ import TimelineDot from '@material-ui/lab/TimelineDot'
 import SentimentVeryDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissatisfied'
 import LaptopMacIcon from '@material-ui/icons/LaptopMac'
 import SchoolIcon from '@material-ui/icons/School'
-import RepeatIcon from '@material-ui/icons/Repeat'
 import WorkIcon from '@material-ui/icons/Work'
 import CodeIcon from '@material-ui/icons/Code'
 import Paper from '@material-ui/core/Paper'
@@ -27,6 +26,15 @@ const useStyles = makeStyles((theme) => ({
 
     year: {
         color: '#ccd6f6',
+    },
+
+    leftSide: {
+        textAlign: 'left',
+    },
+
+    timelineDot: {
+        backgroundColor: 'rgb(35, 53, 84)',
+        color: '#64ffda',
     },
 }))
 
@@ -49,7 +57,7 @@ export default function CustomizedTimeline() {
                     </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
-                    <TimelineDot>
+                    <TimelineDot className={classes.timelineDot}>
                         <SentimentVeryDissatisfiedIcon />
                     </TimelineDot>
                     <TimelineConnector />
@@ -73,13 +81,13 @@ export default function CustomizedTimeline() {
                     </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
-                    <TimelineDot color="primary">
+                    <TimelineDot className={classes.timelineDot}>
                         <LaptopMacIcon />
                     </TimelineDot>
                     <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                    <Paper elevation={3} className={classes.paper}>
+                    <Paper elevation={3} className={`${classes.paper}`}>
                         <Typography variant="h6" component="h1">
                             Earned an A in a MATLAB Course at Rutgers University
                         </Typography>
@@ -96,10 +104,10 @@ export default function CustomizedTimeline() {
                     </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
-                    <TimelineDot color="primary">
+                    <TimelineDot className={classes.timelineDot}>
                         <SchoolIcon />
                     </TimelineDot>
-                    <TimelineConnector className={classes.secondaryTail} />
+                    <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
@@ -117,10 +125,10 @@ export default function CustomizedTimeline() {
                     </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
-                    <TimelineDot color="primary">
+                    <TimelineDot className={classes.timelineDot}>
                         <WorkIcon />
                     </TimelineDot>
-                    <TimelineConnector className={classes.secondaryTail} />
+                    <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
@@ -140,7 +148,7 @@ export default function CustomizedTimeline() {
                     </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
-                    <TimelineDot color="secondary">
+                    <TimelineDot className={classes.timelineDot}>
                         <CodeIcon />
                     </TimelineDot>
                 </TimelineSeparator>
