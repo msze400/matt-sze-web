@@ -72,8 +72,8 @@ export default function Intro() {
                             specializes in full-stack development. I am
                             classically trained as a chemical engineer, but have
                             found my niche in software development. Currently,
-                            I'm working on the App Development Team at Lummus
-                            Technology.
+                            I'm working as a Frontend Developer at Colgate
+                            Palmolive
                         </h3>
 
                         <ColorButton
