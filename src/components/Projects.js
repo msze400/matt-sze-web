@@ -89,7 +89,7 @@ export default function Projects() {
                         liveLink="https://built-to-learn.herokuapp.com/"
                     />
                 </Grid>
-                <Grid item xs={5}>
+                <Grid item xs={8} md={5}>
                     <div>
                         <h3 className={classes.featuredProject}>
                             Featured Project
@@ -112,13 +112,13 @@ export default function Projects() {
                         />
                     </div>
                 </Grid>
-                <Grid item xs={5} className={classes.projectImg}>
+                <Grid xs={8} md={5} className={classes.projectImg}>
                     <TiltThis
                         imageURL={financialIndependence}
                         liveLink="https://finfreedom-dashboard.herokuapp.com"
                     />
                 </Grid>
-                <Grid item xs={5}>
+                <Grid item xs={8} md={5}>
                     <div>
                         <h3 className={classes.featuredProject}>
                             Featured Project
@@ -140,13 +140,13 @@ export default function Projects() {
                         />
                     </div>
                 </Grid>
-                <Grid item xs={5} className={classes.projectImg}>
+                <Grid item xs={8} md={5} className={classes.projectImg}>
                     <TiltThis
                         imageURL={gimmick}
                         liveLink="https://grace-shopper-gimmicks.herokuapp.com/home"
                     />
                 </Grid>
-                <Grid item xs={5}>
+                <Grid item xs={8} md={5}>
                     <div>
                         <h3 className={classes.featuredProject}>
                             Featured Project

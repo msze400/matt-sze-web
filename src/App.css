@@ -69,11 +69,40 @@ body {
     overscroll-behavior-y: none;
 }
 
+.parallax-img{
+    /* background-image: url('/src/assets/financial-independence.png'); */
+    height: 35vh;
+    width: 35vw;
+    background-size: 100% 100%;
+    border: 2px black solid;
+    height: 35vh;
+    width: 35vw;
+    background-size: 100% 100%;
+    border: 2px black solid;
+    margin-top: 2rem;  
+}
+
+
+
+
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@media (min-width:320px) and (max-width:728px) {
+    .parallax-img{
+        /* background-image: url('/src/assets/financial-independence.png'); */
+        height: 30vh;
+        width: 90vw;
+        background-size: 100% 100%;
+        border: 2px black solid;
+        background-size: 100% 100%;
+        border: 2px black solid;
+        margin-top: 1rem; 
     }
 }
