@@ -64,11 +64,11 @@ export default function CustomizedTimeline() {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
-                        <Typography variant="h6" component="h1">
+                        <Typography variant="h6" component="h1" id="timeline-title">
                             Received a 2 out of 5 on the AP Computer Science
                             Exam
                         </Typography>
-                        <Typography>
+                        <Typography id="timeline-desc">
                             Vowed never to get into coding again
                         </Typography>
                     </Paper>
@@ -88,10 +88,10 @@ export default function CustomizedTimeline() {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Paper elevation={3} className={`${classes.paper}`}>
-                        <Typography variant="h6" component="h1">
+                        <Typography variant="h6" component="h1" id="timeline-title">
                             Earned an A in a MATLAB Course at Rutgers University
                         </Typography>
-                        <Typography>
+                        <Typography id="timeline-desc">
                             Enrolled as a Teaching Assistant
                         </Typography>
                     </Paper>
@@ -111,10 +111,10 @@ export default function CustomizedTimeline() {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
-                        <Typography variant="h6" component="h1">
+                        <Typography variant="h6" component="h1" id="timeline-title">
                             Graduated With a B.S. in Chemical Engineering
                         </Typography>
-                        <Typography>from Rutgers University</Typography>
+                        <Typography id="timeline-desc">from Rutgers University</Typography>
                     </Paper>
                 </TimelineContent>
             </TimelineItem>
@@ -132,10 +132,10 @@ export default function CustomizedTimeline() {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
-                        <Typography variant="h6" component="h1">
+                        <Typography variant="h6" component="h1" id="timeline-title">
                             Joined Lummus Technology
                         </Typography>
-                        <Typography>
+                        <Typography id="timeline-desc">
                             as a Process/App Development Engineer
                         </Typography>
                     </Paper>
@@ -151,13 +151,34 @@ export default function CustomizedTimeline() {
                     <TimelineDot className={classes.timelineDot}>
                         <CodeIcon />
                     </TimelineDot>
+                    <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                    <Paper elevation={3} className={classes.paper}>
-                        <Typography variant="h6" component="h1">
+                    <Paper elevation={3} className={classes.paper} >
+                        <Typography variant="h6" component="h1" id="timeline-title">
                             Enrolled and Graduated from Full Stack Academy's
                         </Typography>
-                        <Typography>Part-time Flex Program</Typography>
+                        <Typography id="timeline-desc">Part-time Flex Program</Typography>
+                    </Paper>
+                </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+                <TimelineOppositeContent>
+                    <Typography variant="body2" className={classes.year}>
+                        2021
+                    </Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                    <TimelineDot className={classes.timelineDot}>
+                        <CodeIcon />
+                    </TimelineDot>
+                </TimelineSeparator>
+                <TimelineContent>
+                    <Paper elevation={3} className={classes.paper} >
+                        <Typography variant="h6" component="h1" id="timeline-title">
+                            Landed my First Software Role as a Front End Engineer
+                        </Typography>
+                        <Typography id="timeline-desc">at Colgate Palmolive</Typography>
                     </Paper>
                 </TimelineContent>
             </TimelineItem>

@@ -96,7 +96,6 @@ body {
 
 @media (min-width:320px) and (max-width:728px) {
     .parallax-img{
-        /* background-image: url('/src/assets/financial-independence.png'); */
         height: 30vh;
         width: 90vw;
         background-size: 100% 100%;
@@ -104,5 +103,13 @@ body {
         background-size: 100% 100%;
         border: 2px black solid;
         margin-top: 1rem; 
+    }
+
+    #timeline-title{
+        font-size: 0.8rem;
+    }
+
+    #timeline-desc{
+        font-size: 0.7rem;
     }
 }
