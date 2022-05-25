@@ -82,6 +82,24 @@ body {
     margin-top: 2rem;  
 }
 
+.title{
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.subheader{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.me-description{
+    color: white;
+}
+
 
 
 
@@ -94,7 +112,8 @@ body {
     }
 }
 
-@media (min-width:320px) and (max-width:728px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
+  
     .parallax-img{
         height: 30vh;
         width: 90vw;
@@ -112,4 +131,38 @@ body {
     #timeline-desc{
         font-size: 0.7rem;
     }
+    
+    .title{
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+    .subheader{
+        font-size: 1.25rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .me-description{
+        color: white;
+        /* text-align: justify; */
+    }
+
+    .flip-direction{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    div[style] >{
+        height: '50vh' !important;
+        width: '50vw' !important;
+        background-size: '100% 100%';
+        border: '2px black solid';
+    }
+
+    
 }
+

@@ -9,10 +9,10 @@ export default function AboutMe() {
             direction="row"
             justify="center"
             alignItems="center"
-            className="primary-background"
+            className="primary-background flip-direction"
             style={{ paddingTop: '2rem' }}
         >
-            <Grid item xs={3}>
+            <Grid item xs={8} md={5}>
                 <h2>About Me</h2>
                 <hr />
                 <p style={{ textAlign: 'left' }}>
@@ -40,13 +40,13 @@ export default function AboutMe() {
                     6-month part-time Software Engineering Immersive Program.
                 </p>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={10} md={5}>
                 <img
                     alt="matt on a rock"
                     src={iceland}
                     style={{
                         width: '75%',
-                        height: 'auto',
+                        // height: 'auto',
                     }}
                 />
             </Grid>
