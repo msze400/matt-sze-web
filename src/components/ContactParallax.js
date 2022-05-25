@@ -48,14 +48,13 @@ export default function ContactParallax() {
                 justify="center"
                 alignItems="center"
             >
-                <Grid item xs={5}>
-                    {/* <div style={{ height: '15vh' }}> */}
+                <Grid item xs={8} md={5}>
                     <div
                         style={{ height: '50vh' }}
                         className={classes.contactContents}
                     >
-                        <h1>Get In Touch</h1>
-                        <h3>
+                        <h1 className="footer-title">Get In Touch</h1>
+                        <h3 className="footer-description">
                             I'm currently open to new opportunities, and my
                             inbox is always open. If you have a question or just
                             wanted to get in contact with me, I'll do my best to

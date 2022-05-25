@@ -163,6 +163,16 @@ body {
         border: '2px black solid';
     }
 
+    .footer-title{
+        font-size: 1.5rem;
+
+    }
+
+    .footer-description{
+        font-size: 0.8rem;
+
+    }
+
     
 }
 
