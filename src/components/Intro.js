@@ -32,7 +32,7 @@ export default function Intro() {
                 justify="center"
                 direction="column"
             >
-                <Grid item xs={5}>
+                <Grid item xs={8} md={5}>
                     <div
                         style={{ textAlign: 'left', height: '94vh' }}
                         className={classes.introContents}
@@ -40,34 +40,11 @@ export default function Intro() {
                         <h4 className="SF-body" style={{ color: 'white' }}>
                             Hey my name is,
                         </h4>
-                        <h1
-                            className="SF-header"
-                            style={{
-                                fontSize: '4rem',
-                                marginTop: '1rem',
-                                marginBottom: '1rem',
-                                color: 'white',
-                            }}
-                        >
-                            Matt Sze.
-                        </h1>
-                        <h1
-                            className="SF-header"
-                            style={{
-                                fontSize: '3rem',
-                                marginTop: '1rem',
-                                marginBottom: '1rem',
-                                color: 'white',
-                            }}
-                        >
+                        <h1 className="SF-header title">Matt Sze.</h1>
+                        <h1 className="SF-header subheader">
                             I enjoy solving problems.
                         </h1>
-                        <h3
-                            className="SF-header"
-                            style={{
-                                color: 'white',
-                            }}
-                        >
+                        <h3 className="SF-header me-description">
                             I'm a New Jersey-based software engineer who
                             specializes in full-stack development. I am
                             classically trained as a chemical engineer, but have
