@@ -69,6 +69,26 @@ body {
     overscroll-behavior-y: none;
 }
 
+.title{
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.subheader{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.me-description{
+    color: white;
+}
+
+
+
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
@@ -76,4 +96,40 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
+    
+    .title{
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+    .subheader{
+        font-size: 1.25rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .me-description{
+        color: white;
+        /* text-align: justify; */
+    }
+
+    .flip-direction{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    div[style] >{
+        height: '50vh' !important;
+        width: '50vw' !important;
+        background-size: '100% 100%';
+        border: '2px black solid';
+    }
+
+    
 }
