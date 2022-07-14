@@ -7,7 +7,6 @@ import Grid from '@material-ui/core/Grid'
 const useStyles = makeStyles((theme) => ({
     contactButton: {
         width: '50px',
-        // display: 'inline-fle
     },
 
     contactContents: {
@@ -45,7 +44,7 @@ export default function ContactParallax() {
             <Grid
                 container
                 direction="row"
-                justify="center"
+                justifyContent="center"
                 alignItems="center"
             >
                 <Grid item xs={8} md={5}>

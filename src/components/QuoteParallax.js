@@ -15,7 +15,7 @@ export default function QuoteParallax() {
             <Grid
                 container
                 direction="row"
-                justify="center"
+                justifyContent="center"
                 alignItems="center"
             >
                 <Grid item xs={8}>

@@ -65,7 +65,7 @@ export default function Projects() {
             container
             // spacing={3}
             direction="column"
-            justify="center"
+            justifyContent="center"
             alignItems="center"
             className="primary-background"
         >
@@ -76,7 +76,7 @@ export default function Projects() {
                 xs={12}
                 spacing={6}
                 direction="row" //when mobile switch to columns
-                justify="center"
+                justifyContent="center"
                 alignItems="center"
             >
                 <Grid item xs={8}>
@@ -112,7 +112,7 @@ export default function Projects() {
                         />
                     </div>
                 </Grid>
-                <Grid xs={8} md={5} className={classes.projectImg}>
+                <Grid item xs={8} md={5} className={classes.projectImg}>
                     <TiltThis
                         imageURL={financialIndependence}
                         liveLink="https://finfreedom-dashboard.herokuapp.com"

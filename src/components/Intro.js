@@ -29,7 +29,7 @@ export default function Intro() {
                 container
                 alignItems="center"
                 align="center"
-                justify="center"
+                justifyContent="center"
                 direction="column"
             >
                 <Grid item xs={8} md={5}>

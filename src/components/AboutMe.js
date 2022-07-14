@@ -7,7 +7,7 @@ export default function AboutMe() {
             container
             // spacing={3}
             direction="row"
-            justify="center"
+            justifyContent="center"
             alignItems="center"
             className="primary-background flip-direction"
             style={{ paddingTop: '2rem' }}
@@ -46,7 +46,6 @@ export default function AboutMe() {
                     src={iceland}
                     style={{
                         width: '75%',
-                        // height: 'auto',
                     }}
                 />
             </Grid>
