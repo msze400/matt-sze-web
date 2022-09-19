@@ -217,7 +217,7 @@ export default function CustomizedTimeline() {
             <TimelineItem>
                 <TimelineOppositeContent>
                     <Typography variant="body2" className={classes.year}>
-                        2021
+                        2022
                     </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
