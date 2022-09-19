@@ -3,6 +3,8 @@ import Grid from '@material-ui/core/Grid'
 import learnit from '../assets/built-to-learn.png'
 import financialIndependence from '../assets/financial-independence.png'
 import gimmick from '../assets/gimme-yo-money.png'
+import SST from '../assets/SST.png'
+import HillsToHome from '../assets/HillsToHome.png'
 import TiltThis from './Tilt'
 import Paper from '@material-ui/core/Paper'
 import GitHubIcon from '@material-ui/icons/GitHub'
@@ -49,7 +51,9 @@ export default function Projects() {
                     <IconButton
                         onClick={(event) => (window.location.href = githubLink)}
                     >
-                        <GitHubIcon className={classes.icon} />
+                        {githubLink ? (
+                            <GitHubIcon className={classes.icon} />
+                        ) : null}
                     </IconButton>
                     <IconButton
                         onClick={(event) => (window.location.href = liveLink)}
@@ -165,6 +169,64 @@ export default function Projects() {
                         <LinkRow
                             githubLink="https://github.com/Graceshopper-Gimmick/Grace-Shopper-Gimmick/tree/main/fs-app-template"
                             liveLink="https://grace-shopper-gimmicks.herokuapp.com/home"
+                        />
+                    </div>
+                </Grid>
+                <Grid item xs={8}>
+                    <h1>Professional Work</h1>
+                    <hr />
+                </Grid>
+                <Grid item xs={5} className={classes.projectImg}>
+                    <TiltThis
+                        imageURL={SST}
+                        liveLink="https://built-to-learn.herokuapp.com/"
+                    />
+                </Grid>
+                <Grid item xs={12} md={5}>
+                    <div>
+                        <h3 className={classes.featuredProject}>
+                            Featured Project
+                        </h3>
+                        <h2 className={classes.rightSide}>
+                            Sinfully Sweet Treats
+                        </h2>
+                        <Paper className={classes.projectDesc}>
+                            Sinfully Sweet Treats is a New Jersey based home
+                            cottage dessert bakery business that sells custom
+                            made treats directly to customers.
+                        </Paper>
+                        <p className={classes.rightSide}>
+                            Tailwind | React | Typescript
+                        </p>
+                        <LinkRow
+                            githubLink="https://github.com/msze400/Sinfully-Sweet-Treats"
+                            liveLink="http://sstreatsbyamanda.com/"
+                        />
+                    </div>
+                </Grid>
+                <Grid item xs={5} className={classes.projectImg}>
+                    <TiltThis
+                        imageURL={HillsToHome}
+                        liveLink="https://built-to-learn.herokuapp.com/"
+                    />
+                </Grid>
+                <Grid item xs={12} md={5}>
+                    <div>
+                        <h3 className={classes.featuredProject}>
+                            Featured Project
+                        </h3>
+                        <h2 className={classes.rightSide}>Hill to Home</h2>
+                        <Paper className={classes.projectDesc}>
+                            Hill's to Home is eCommerce platform where customers
+                            can buy prescription or non-prescription based for
+                            their furry friends!
+                        </Paper>
+                        <p className={classes.rightSide}>
+                            Angular | Typescript | Bootstrap
+                        </p>
+                        <LinkRow
+                            // githubLink="https://github.com/msze400/Sinfully-Sweet-Treats"
+                            liveLink="https://hillstohome.com/login"
                         />
                     </div>
                 </Grid>

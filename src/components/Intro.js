@@ -49,8 +49,9 @@ export default function Intro() {
                             specializes in full-stack development. I am
                             classically trained as a chemical engineer, but have
                             found my niche in software development. Currently,
-                            I'm working as a Frontend Engineer on the Hill's to
-                            Home eCommerce team at Colgate Palmolive.
+                            I'm working as a Software Engineer at MIT Lincoln
+                            Lab in its Artificial Intelligence and Algorithms
+                            group.
                         </h3>
 
                         <ColorButton

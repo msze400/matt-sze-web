@@ -63,14 +63,17 @@ export default function ButtonAppBar() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {['Blog', 'Travel', 'Personal Finance', 'Bucket List'].map(
-                    (text, index) => (
-                        <ListItem button key={text}>
-                            {/* <ListItemIcon></ListItemIcon> */}
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    )
-                )}
+                {[
+                    'Blog - Coming Soon',
+                    'Travel - Coming Soon',
+                    'Personal Finance - Coming Soon',
+                    'Bucket List - Coming Soon',
+                ].map((text, index) => (
+                    <ListItem button key={text}>
+                        {/* <ListItemIcon></ListItemIcon> */}
+                        <ListItemText primary={text} />
+                    </ListItem>
+                ))}
             </List>
             {/* <Divider /> */}
         </Box>
