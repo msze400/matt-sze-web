@@ -119,7 +119,7 @@ export default function Projects() {
                 <Grid xs={8} md={5} className={classes.projectImg}>
                     <TiltThis
                         imageURL={financialIndependence}
-                        liveLink="https://finfreedom-dashboard.herokuapp.com"
+                        liveLink="https://finfreedom.onrender.com"
                     />
                 </Grid>
                 <Grid item xs={12} md={5}>
@@ -140,14 +140,14 @@ export default function Projects() {
                         </p>
                         <LinkRow
                             githubLink="https://github.com/msze400/Financial-Independence-App"
-                            liveLink="https://finfreedom-dashboard.herokuapp.com"
+                            liveLink="https://finfreedom.onrender.com"
                         />
                     </div>
                 </Grid>
                 <Grid item xs={8} md={5} className={classes.projectImg}>
                     <TiltThis
                         imageURL={gimmick}
-                        liveLink="https://grace-shopper-gimmicks.herokuapp.com/home"
+                        liveLink="https://gimmicks.onrender.com"
                     />
                 </Grid>
                 <Grid item xs={12} md={5}>
@@ -168,7 +168,7 @@ export default function Projects() {
                         </p>
                         <LinkRow
                             githubLink="https://github.com/Graceshopper-Gimmick/Grace-Shopper-Gimmick/tree/main/fs-app-template"
-                            liveLink="https://grace-shopper-gimmicks.herokuapp.com/home"
+                            liveLink="https://gimmicks.onrender.com"
                         />
                     </div>
                 </Grid>
@@ -179,7 +179,7 @@ export default function Projects() {
                 <Grid item xs={5} className={classes.projectImg}>
                     <TiltThis
                         imageURL={SST}
-                        liveLink="https://built-to-learn.herokuapp.com/"
+                        liveLink="http://sstreatsbyamanda.com"
                     />
                 </Grid>
                 <Grid item xs={12} md={5}>
@@ -207,7 +207,7 @@ export default function Projects() {
                 <Grid item xs={5} className={classes.projectImg}>
                     <TiltThis
                         imageURL={HillsToHome}
-                        liveLink="https://built-to-learn.herokuapp.com/"
+                        liveLink="https://hillstohome.com/login"
                     />
                 </Grid>
                 <Grid item xs={12} md={5}>
