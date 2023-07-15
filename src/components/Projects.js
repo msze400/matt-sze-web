@@ -11,6 +11,7 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 import ExitToAppIcon from '@material-ui/icons/ExitToApp'
 import IconButton from '@material-ui/core/IconButton'
 import React from 'react'
+import MIT from '../assets/MIT.webp'
 
 const useStyles = makeStyles((theme) => ({
     projectImg: {
@@ -20,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
 
     rightSide: {
         textAlign: 'right',
+    },
+
+    leftSide: {
+        textAlign: 'left',
     },
 
     projectDesc: {
@@ -37,6 +42,17 @@ const useStyles = makeStyles((theme) => ({
         color: '#64ffda',
         textAlign: 'right',
         fontFamily: 'Space Mono',
+    },
+
+    featuredProjectPro: {
+        color: '#64ffda',
+        textAlign: 'left',
+        fontFamily: 'Space Mono',
+    },
+
+    leftSideContain: {
+        display: 'flex',
+        justifyContent: 'flex-start',
     },
 }))
 
@@ -176,6 +192,30 @@ export default function Projects() {
                     <h1>Professional Work</h1>
                     <hr />
                 </Grid>
+                <Grid item xs={12} md={5}>
+                    <div>
+                        <h3 className={classes.featuredProjectPro}>
+                            Featured Project
+                        </h3>
+                        <h2 className={classes.leftSide}>
+                            Sinfully Sweet Treats
+                        </h2>
+                        <Paper className={classes.projectDesc}>
+                            Sinfully Sweet Treats is a New Jersey based home
+                            cottage dessert bakery business that sells custom
+                            made treats directly to customers.
+                        </Paper>
+                        <p className={classes.leftSide}>
+                            Tailwind | React | Typescript
+                        </p>
+                        <div className={classes.leftSideContain}>
+                            <LinkRow
+                                githubLink="https://github.com/msze400/Sinfully-Sweet-Treats"
+                                liveLink="http://sstreatsbyamanda.com/"
+                            />
+                        </div>
+                    </div>
+                </Grid>
                 <Grid item xs={5} className={classes.projectImg}>
                     <TiltThis
                         imageURL={SST}
@@ -184,24 +224,24 @@ export default function Projects() {
                 </Grid>
                 <Grid item xs={12} md={5}>
                     <div>
-                        <h3 className={classes.featuredProject}>
+                        <h3 className={classes.featuredProjectPro}>
                             Featured Project
                         </h3>
-                        <h2 className={classes.rightSide}>
-                            Sinfully Sweet Treats
-                        </h2>
+                        <h2 className={classes.leftSide}>Hill to Home</h2>
                         <Paper className={classes.projectDesc}>
-                            Sinfully Sweet Treats is a New Jersey based home
-                            cottage dessert bakery business that sells custom
-                            made treats directly to customers.
+                            Hill's to Home is eCommerce platform where customers
+                            can buy prescription or non-prescription based for
+                            their furry friends!
                         </Paper>
-                        <p className={classes.rightSide}>
-                            Tailwind | React | Typescript
+                        <p className={classes.leftSide}>
+                            Angular | Typescript | Bootstrap
                         </p>
-                        <LinkRow
-                            githubLink="https://github.com/msze400/Sinfully-Sweet-Treats"
-                            liveLink="http://sstreatsbyamanda.com/"
-                        />
+                        <div className={classes.leftSideContain}>
+                            <LinkRow
+                                // githubLink="https://github.com/msze400/Sinfully-Sweet-Treats"
+                                liveLink="https://hillstohome.com/login"
+                            />
+                        </div>
                     </div>
                 </Grid>
                 <Grid item xs={5} className={classes.projectImg}>
@@ -212,23 +252,35 @@ export default function Projects() {
                 </Grid>
                 <Grid item xs={12} md={5}>
                     <div>
-                        <h3 className={classes.featuredProject}>
+                        <h3 className={classes.featuredProjectPro}>
                             Featured Project
                         </h3>
-                        <h2 className={classes.rightSide}>Hill to Home</h2>
+                        <h2 className={classes.leftSide}>
+                            MIT Lincoln Lab Projects
+                        </h2>
                         <Paper className={classes.projectDesc}>
-                            Hill's to Home is eCommerce platform where customers
-                            can buy prescription or non-prescription based for
-                            their furry friends!
+                            Coding up a ton of things that I can't mention here
+                            but they involve dealing with outer-space, front-end
+                            development, backend development, and much more.
                         </Paper>
-                        <p className={classes.rightSide}>
-                            Angular | Typescript | Bootstrap
+                        <p className={classes.leftSide}>
+                            Svelte | React | ExtJS | PostgresSQL | PostgREST |
+                            Python | FastAPI | Docker | Maven | Open Layers |
+                            Apex Charts | Jenkins
                         </p>
-                        <LinkRow
-                            // githubLink="https://github.com/msze400/Sinfully-Sweet-Treats"
-                            liveLink="https://hillstohome.com/login"
-                        />
+                        <div className={classes.leftSideContain}>
+                            <LinkRow
+                                // githubLink="https://github.com/msze400/Sinfully-Sweet-Treats"
+                                liveLink="https://www.ll.mit.edu/r-d/homeland-protection/artificial-intelligence-software-architectures-and-algorithms"
+                            />
+                        </div>
                     </div>
+                </Grid>
+                <Grid item xs={5} className={classes.projectImg}>
+                    <TiltThis
+                        imageURL={MIT}
+                        liveLink="https://www.ll.mit.edu/r-d/homeland-protection/artificial-intelligence-software-architectures-and-algorithms"
+                    />
                 </Grid>
             </Grid>
             <div style={{ height: '10vh' }} />
