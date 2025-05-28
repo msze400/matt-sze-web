@@ -34,10 +34,11 @@ export default function AboutMe() {
                     a role as a Process/App Development Engineer at Lummus
                     Technology.
                     <br />
-                    <br />
-                    More recently I have become interested in expanding more
-                    into tech and have graduated from Fullstack Academy's
-                    6-month part-time Software Engineering Immersive Program.
+                    <br />I graduated from Fullstack Academy's 6-month part-time
+                    Software Engineering Immersive Program, and am currently
+                    working as a software engineer at MIT Lincoln Laboratory.
+                    I'm currently pursuing my Master's at the University Of
+                    Pennsylvania.
                 </p>
             </Grid>
             <Grid item xs={10} md={5}>

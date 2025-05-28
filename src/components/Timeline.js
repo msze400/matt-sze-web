@@ -224,6 +224,7 @@ export default function CustomizedTimeline() {
                     <TimelineDot className={classes.timelineDot}>
                         <CodeIcon />
                     </TimelineDot>
+                    <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
@@ -236,6 +237,33 @@ export default function CustomizedTimeline() {
                         </Typography>
                         <Typography id="timeline-desc">
                             Artifical Intelligence and Algorithms Group
+                        </Typography>
+                    </Paper>
+                </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+                <TimelineOppositeContent>
+                    <Typography variant="body2" className={classes.year}>
+                        2025
+                    </Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                    <TimelineDot className={classes.timelineDot}>
+                        <SchoolIcon />
+                    </TimelineDot>
+                </TimelineSeparator>
+                <TimelineContent>
+                    <Paper elevation={3} className={classes.paper}>
+                        <Typography
+                            variant="h6"
+                            component="h1"
+                            id="timeline-title"
+                        >
+                            Enrolled in University of Pennsylvania's
+                        </Typography>
+                        <Typography id="timeline-desc">
+                            Masters of Computer and Information Technology
+                            Program
                         </Typography>
                     </Paper>
                 </TimelineContent>

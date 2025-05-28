@@ -50,7 +50,7 @@
 }
 
 .learnit {
-    background-image: url('/src/assets/built-to-learn.png');
+    background-image: url('/src/assets/built-to-learn.webp');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -70,7 +70,7 @@ body {
 }
 
 .parallax-img{
-    /* background-image: url('/src/assets/financial-independence.png'); */
+    /* background-image: url('/src/assets/financial-independence.webp'); */
     height: 35vh;
     width: 35vw;
     background-size: 100% 100%;

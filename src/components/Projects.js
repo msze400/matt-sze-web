@@ -1,10 +1,10 @@
 import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
-import learnit from '../assets/built-to-learn.png'
-import financialIndependence from '../assets/financial-independence.png'
-import gimmick from '../assets/gimme-yo-money.png'
-import SST from '../assets/SST.png'
-import HillsToHome from '../assets/HillsToHome.png'
+import learnit from '../assets/built-to-learn.webp'
+import financialIndependence from '../assets/financial-independence.webp'
+import gimmick from '../assets/gimme-yo-money.webp'
+import SST from '../assets/SST.webp'
+import HillsToHome from '../assets/HillsToHome.webp'
 import TiltThis from './Tilt'
 import Paper from '@material-ui/core/Paper'
 import GitHubIcon from '@material-ui/icons/GitHub'
@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Projects() {
     const classes = useStyles()
-    // const photo = require('./assets/peru.png')
+    // const photo = require('./assets/peru.webp')
 
     function LinkRow({ githubLink, liveLink }) {
         return (
