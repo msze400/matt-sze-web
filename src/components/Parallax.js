@@ -1,6 +1,6 @@
 import { Parallax } from 'react-parallax'
 import Intro from './Intro'
-import iceland7 from '../assets/Iceland-7.JPG'
+import iceland7 from '../assets/Iceland-7.webp'
 
 export default function Container() {
     return (

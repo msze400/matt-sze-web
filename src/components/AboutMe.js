@@ -1,5 +1,5 @@
 import Grid from '@material-ui/core/Grid'
-import iceland from '../assets/Iceland-1.JPG'
+import iceland from '../assets/Iceland-1.webp'
 
 export default function AboutMe() {
     return (

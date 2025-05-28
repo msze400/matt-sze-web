@@ -1,6 +1,6 @@
 import { Parallax } from 'react-parallax'
 import { makeStyles, withStyles } from '@material-ui/core/styles'
-import iceland3 from '../assets/Iceland-3.JPG'
+import iceland3 from '../assets/Iceland-3.webp'
 import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
 

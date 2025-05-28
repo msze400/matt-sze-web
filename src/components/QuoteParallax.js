@@ -1,6 +1,6 @@
 import { Parallax } from 'react-parallax'
 import Grid from '@material-ui/core/Grid'
-import iceland5 from '../assets/Iceland-5.JPG'
+import iceland5 from '../assets/Iceland-5.webp'
 
 export default function QuoteParallax() {
     // const classes = useStyles()
